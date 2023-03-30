@@ -2,18 +2,36 @@
 
 // handle html
 const generateHTML = (pageName) => {
-  return ``;
+  return `
+    <section id="main">
+            <h1>Hey wait a minute... this isn't studying... this is ${pageName}!!</h1>
+    </section>
+`;
 };
 
 // handle styling
 const generateCSS = () => {
-  return ``;
+  return `  
+  <style>
+
+    #main{
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        justify-content:center;
+        align-items:center
+    }
+    h1{
+    font-size: 6rem;
+    }
+  </style>`;
 };
 
 const domains = [
   //   communicative social media apps
   { host: "www.facebook.com", name: "Facebook" },
-  { host: "www.twitter.com", name: "Twitter" },
+  { host: "twitter.com", name: "Twitter" },
   { host: "www.reddit.com", name: "Reddit" },
   { host: "www.instagram.com", name: "Instagram" },
   { host: "www.wechat.com", name: "WeChat" },
